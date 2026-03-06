@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230b1829'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='18' fill='%23f5c518'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='20' fill='%230b1829'/%3E%3Ctext x='90' y='130' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='110' fill='%23f5c518'%3EM%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0b1829">
+<meta name="description" content="Магнитогорск Металл Импорт - поставщик металлопроката, труб, фитингов, сэндвич-панелей. Прямые поставки от производителей. Работаем с Казахстаном, Алматы, Каскелен.">
+<meta name="keywords" content="металлопрокат, трубы стальные, фитинги, задвижки, сэндвич-панели, арматура, листы, уголок, швеллер, балки, Казахстан, Алматы, поставки, цены">
+<title>Магнитогорск Металл Импорт — Металлопрокат, Трубы, Фитинги, Сэндвич-панели</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="supabase.min.js"></script>
+</head>
+<body>
+
+<!-- TOP RIBBON -->
+<div class="top-ribbon" id="topRibbon">
+  🔥 АКЦИЯ: Скидка 5% на арматуру при заказе от 5 тонн. Действует до 31 мая 2025.
+  <button class="top-ribbon-close" onclick="document.getElementById('topRibbon').remove()">✕</button>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header id="mainHeader">
+
+  <!-- ACCENT BAR TOP -->
+  <div class="header-accent-bar"></div>
+
+  <!-- TOP BAR: contacts + hours -->
+  <div class="header-topbar">
+    <div class="container">
+      <div class="header-topbar-inner">
+        <div class="topbar-contacts">
+          <a href="tel:+77075545148" class="topbar-item">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <strong>+7 (707) 554-51-48</strong>
+          </a>
+          <a href="mailto:Magnitogorsk.Metall.Import@mail.ru" class="topbar-item">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <strong>Magnitogorsk.Metall.Import@mail.ru</strong>
+          </a>
+          <a href="#contacts" class="topbar-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Казахстан, Алматинская обл., г. Каскелен, ул. Жазира 5/3, офис 35
+          </a>
+        </div>
+        <div class="topbar-right">
+          <div class="topbar-hours">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+            Пн–Пт: 08:30–17:30 &nbsp;|&nbsp; Обед: 12:30–13:30
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAV ROW -->
+  <div class="header-main">
+    <div class="container">
+      <div class="header-main-inner">
+
+        <!-- LOGO -->
+        <a href="#hero" class="logo" aria-label="Магнитогорск Металл Импорт — на главную">
+          <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCACtANIDASIAAhEBAxEB/8QAHQAAAgAHAQAAAAAAAAAAAAAAAAgBAgMEBQYHCf/EAEgQAAEDAwIEBAQDBQMGDwAAAAECAwQABREGBwgSITETQVFhFCJxgTKRoRUjQmKxCVLBFhclM1OUGCQmNTZDRnJ1orKz0dLh/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAECAwQFBgf/xAAxEQACAgIBAwIEBAYDAQAAAAAAAQIDBBEFEiExBkETIjJxFFFhgRUjJEKxwVKR0fD/2gAMAwEAAhEDEQA/AOztQh6VdtQh6Vl2ogGOgq6aiD0qxiMS3C9qumogwPlrLNxfYVXbjDPagMU3EHpVwiJjyNZVuMPSqyI/bpQGMbij0NVkxR6VkkMe1VUse1BsxyIw9P0qsmMB5fpV+lr2qbw8UI2WKY4/u1USwPSr0IqIRQFoGB6VOGh6Vc4FRwKAtw0PSpvCHpVaigKQbHpUwbHoKnooCXkHpRyCpqKAl5BUeUVGigIcoo5RUaKAhyijlFRooCHKKKjRQGttxvarhuP7VdttD0qslselBstUMYqslmrgN1USgYoNlBDWKqhsVUwBUcUGyQJqblqNFAQ6CjIo86lUtKRzKISB6mg0ybpRmtA1lvJtzpFbjV41NCTIR+JhpfiLH2TmuRag4vtPJkKjaZ0pdbqo5ShxzDYKvLAGSQftWzVhX2/TFjaXkZzm96iOtKON8d+dSfLprbZUYs9XS5GcVkHtjm5aP2nxb6h/43DhM2ZCPl8EstI5vfC8mtj+GTX1Siv3CkvYbioE0o/wfGFn/nBn8o3/AMUHUfFjpzDEyyNXpTvzBwR0L5Pb92QPzo+OftZF/uNr8huMj1ozSko4hd4dOYj6s2zddWz88h1tpxA5PboQOnvWz6W4udDz3Qzf7PdLI4onC1JDqAPUkdf0rHPjshLaW/t3G0MfmjNalo3cfRWr0/8AJ/UMGYvAJbS6AsfVJ61taSFdfKtOUJQepLQ1+RPRRRUAKKKKAKKKKAKKKKAopRiqgTU1FAGKKKKAKPKioEjtUAKpvPNR2VPPuJbbSMlSjgD71rm5GtrJoLS0jUF8fKI7IwlCOq3FHslIpTL/AK33E4jtRjTek4siy6aQQZCucgcvq6od/ZIrdxcGd/zPtFeWw+x2Hd3iY0hpEPW+wKF/uyQU8jJ/dNK9FK8/tmuWx7fxFb1tpkS5Q03YJHVISSwhSD6DPOquGawsEGxasulgt89M9uE8WhJT05yO56e9MTwub7rZch6C1m6eb8EK4uu9FeiFk/kDXqMrh/wWJHIxV1792YI29UtSNt0Pwn6EtSW5GpJM6+zchSypzw2ifP5R1I+prtOltF6V0zCTDsVigwWU9QG2hkn1J7k1nELSsBSSFAjII86nBryVuXdd9cmbHZByj0qNFFYBthUMCo0VA2yVSG1JKVpCge4I71q2rdudD6ojrZvWmrdJ508vieCErA9lDqK2o0VeM5R7xehvYsWtuEuxLX8foS+zrLOb6oQ64Voz7KGFD9a0+RrLiB2PDY1TGav1iSsNpkPL8QH0AcHUH/vCm71DebXYLTIul3nMw4jCSpx11QSAKRLfTeS9bn3Ny1w0/B6ajvZaaByp8jstR/oK9Dw9WRyVqqnHqj7t/wDpSxqC2NDtBv7o7cENwTINqvJRlcOT0yf5VdlV11JyAQQQR5V5g2CwJvuo4FmjyRElS3PCYdwcBZ7DI7ZPnXeND71692iuEfSG6VkmyICF8jU5wnxA2OmUk9HE/fNZeY9PrGt6aJbfnXuVrt6l3HH61EVjNNXy16iskW82eW3KhSmw404g9CDV7Ikx47fiSHkNIyBzLOBk9q8w009MyaK1FQCgeoOajUAKKKKgBRRRUgKKKgaAie1afupr6xbeaWdvt8f8NAyhlsDKnXMdEgVtE+WxBhPTJTyGWGWy44tRwEpAySTSN6mn37iT3r/YdufcZ01AWShWMobbBwpZx5q8q3MLFV83Kb1GPkSeuxV0jp/XPEzrN286iuDkPTUN3ASgFKUpz+Bseasd1U2DFhsG2e2k9rT8WPAjQYTjiVK/iWEnBWfMk4rYdJ6ftmmdPQ7LaoyGIsVoNoShOM4Hc+5rmHGLenLRsfdWmfCKpykRiFnryk5JHv0rPLInmXRph2jtaQ10rb8iMQX3Z82XcHykuyHlOL5R0yTnpVW4w0vo9FDqCO4NS2drkioAOOlX3fvX2ammMaY1NdktHMk++zvnC5vw7bH4mhNbPOuocX4cG4OKzj0Qs+noabxC0uJStBBSRkEV5eT4aZCe2COx8xXfuGPfl6wPs6L1xLkPRXHEtwZzh5vCz0CFHvj3r576i9OOpvIxl290bdNyl8shyKKkbcS62HG1BSVDII8xU9eHNloKKKh51JGgrCa21TZtHaclX++ShHhxk5UrGST5ADzJq33B1nYND2B68X+ezFZQDyJUr5nVeSUjuSaQfdfcrUu6d8VIuTy41oaWfhYLZIQE+RV6q+tdfiOHt5GzSXyryys5qtbZd737o3bdfUXiJ+Ih2Bg4jQyror+dQ9T+lagyyhpAShOBUWW0to5UjFVMV9cwcCrBqVVaOdKbm+5j5ct+2XGHc47rjTkV9LqVtn5hg56U/urNGae3m2rtzdzS6j4mK3IiyegdaWU9/f3FIJeWi7EWkelPLwfajOodl7ah2Q49It5VFdUtOMcvYe/SvHes6pQdeRDyjaxH2aYv+l9S604bdxUaX1HIcnaWeXkFKSpPIf4289iPNNOXYrnZ9V6fi3aAtmdb5aEusqKcgjuDj1rCbwbf2bcTRsmyXNoeIQVxngBzNOAdCD6etLBwu61uW2e5c7a3Vzi2Yz0gtxy6r5WnQemM+ShXlLFHOqdsVqcfP6/qbC+V6HSSAnoKKgOvUHI8qj51xyX5AqoqOBRU9iwUUUGhUKDUDQv8JNAhbuOTcJVi0lH0dbH3EXC8dXfD8mQcEfc9K27hQ24jaF22jSXmcXa6ITIlLUnCkgj5UfQClz1Kr/O1xetRGeV2DGmpb50IK0Fpnqcg+pGPvT2NNoZaS02kJQkAJA7AV1s3+mxoULzLuyI922TjrSk/2gF3cXK0zp1LSfDVzylL5uuc8uMfam2zgV5/8Vt3Xe9/rkgtlCbehEZOVZBwO/tWf01jfHz4fku5W16g2aDGSG2QPQVUaYnPW6Vco8F96HEWlL7yEkpbKu2T5VbTnPDjKOcdKbDgu0bFl7O3SRd4TTrF9fWlWTkuNAcuD6edfR+c5b+GUqaW3s0aa/iMVRh5DqeZJyKoT4iJKCCMHuD5iulcQWz1y2wvi7jZWJcvTD5yl44UY6j/AAKx5ehrnMZ5LzYUg5zW3gchRyFHXDv+aInB1vudw4at+ZOmZiNJa7nSH7YspbgzHBzFg5xyrPcp9/KnOZeaeZQ80sLbWkKSodiDXl9OiokNcpGTXbuG3febpO4NaV1zcHHbGoBESW4CpUdXklR/uf0rxfqL024N5GMtr3RtU3b7MdbIrVN0NdWXQGlpV+vDw5Wk/umEqAW8vySkHuax+6W6OltAaVbvVymJdMhGYTDXzLkHGRy+3vSF661ZqHcXUj191DJcWgLPwsbPyMIz0AH+NcHheDt5GzutRXlmayxQX6l3ujr2/bqanF4vIDENgFMSIj8LSc56+p96wzaENoAHYChCUtp6dhVKJFul+vMexWGI5MuEpXI2033PufQD1r6nTTj8dRpaUUc9uVkirbI1zvl5j2SxQ3Zs59QShttOce59BW2bzaCm7ZXu0W6bOEtU+IH1dMci84Un6ZptuHnZm2ba2gTXyqVf5jSfi31kYR58iceQ9fOtA4+bD4+jbRqNtLIXAl+E4oj5ylY6AH0yK8cvVMr+ShCD1DevubX4fVf6isu4caI8iKYXgE1AGrlqLSzjrxzyymUfwJHZX3peIiwuOlQ8xW+8Lt//AMnN97alchbMe5BUZxKU5CyRlIPp1rv+p8Z38fLXt3MOPLU9HoLSt8cu3iXrRH3Fs6FNXGAtCJSmk/MpH8K8+XKfP3FNJ5CsTrGxxNR6auNknI548yOppQwD3HQ9fMGvlOHe8e2M/wDv7HQa2tGg8L+vla92uhzpjoXcYh+GlYHdSR0P3HWuqedJXwZXN3Ru8eodB3LDCpBU2hDpPN4jajgDHTqKdTzrNyVKpvaj4fdfZlV3QUVAmitAkmoooqSAqw1FNNs0/cLiEeIYsZx4Izjm5Uk4/Sr+sLr3/oNff/Dn/wD21VMFuSJQoPA7EF73h1HqVSyypppSvBHUHxVnz9sU65pMv7PPpqrVef8AYNf+tVOca6fMP+qf2X+CsfpLW5yRCtkqYpJUGGluFI7nlBOP0rzHuVwcvWrbxeHVOlUmW44C6rmUAVHAzT+cSGok6Z2bv08OPNuuMGO0pn8SVL6A/TvXnzZWsRQtZJUrqSfWvTeicfdk7tGDKlpJFO+LKmUsoI51qCU/U9K9E9r4Vu0DtDZ49wdh25iJBQuS6V8rYURlSiT6k0im09iRqveHT1jd5fBXKDjgUnmSUo+Ygj3xTUcbt3btOzIs7KWea4SW2EoKsEIHXKR54wKt6rnLKzK8WP8A9sYy6YOR2KJM05rbTzhhyod3tctCm1KaWHEKB6EUk3ELszcNs7t+2LGmVO05IUSo8mTFJP4VEeXoa07aTcPVO19zTOsr6pFvcIMqC4f3bg8yPQ+9PTtjr3Su7Wj1yoKUvIUnwpsN9IJbUR1SoHuPeubOjN9PXqxd4MyKULlo8+4khD7YUk5zU0mM1ISUrAP1rqPEZsvM22uStQ2Dxpmn5TqitARlUQnrhWOnL6GuWRJKJDYUhQNfROO5GjkKVKH7o0rIOEi6uUm43RENq6XGTNbhN+FGS84VBpPoPSqYCUJ6EACplnCcmqFuiXPUF8i6fsMZUq4S18jaB6+pNbMnTiVOWumKKrcmRt8W53+9R7DYYq5dxlL5Gmkdz7+wFO5w77MWrbmyouV1ZZk6keRzSZROQ0P7iM9gPM0cPezNq22saLjdWo8jUbqSqTMJyGh/dQT2A9a5fxOb/SRLf0ZoGa0oFJRPuDZyU56FCD2+pr5zyPJZPN5H4fH+g3q4Rpjt+ToesOJbROn9dRtLMNyLmFPJZfmR1JLTCicYJJ6488Vuu+Ngj6w2hvtvJBDsJTzK0oCyFJHMCPc4x9684ZsENQ1OfjczzKUfM16Q7HX1vVO0NjuJ8JKnYSW3Etq5gkgcpH1rU5rhlxPwpxe37lqrfibPOuyOK8Dwl9FoJSQe4xVdqe7ZdR2u9MOuMrhym3edv8QAUM4+2ayuv7SrTW6WobMrxQlma5yKcTylaScg/TrWFvTPiw1Y8hmvo1UlmYCfnaNH6LD0805cG7rp+BcmSotyY6HUlQwcEZ61f+RrlnCxqQam2Ysj65CpD8Zr4Z9RRy4Wjpiup+dfFr63XZKD9mdNd9MRW/pe0dxtIchuJkLlXJKzzpwAHh1HT0zT1eeaRneTA417eT2+Ni/0FPNXT5TvXTJ+ekrH3DFFRzRXJLBRRRQqQNSSmkPxXGXUJW2tJSpKhkEEYIqpUFdqbJXkRnhqlOaQ4pbpYbgl2F8U6/HEdH4SrmKkggdMYzTzq7ikf4ubNJ0HvpZ9eQWfDjSnG5BU3lILqFDnBPqR1+9OVpC9xtR6bgXuGsLYmMIdQR7iutyn82NeQvDWv3REfdC+ce2ojE0XadOMvOIduErxHEBPyrQj1P1pVIqQ1FGewFde419QKvG78WyNyA5HtUYAt8mORxXU9fPpiuOzXQ3EV0I6dK+g+k8dU4HW/fuaWS+qejuXArZTcNy7zqErUEQIvgpSW8hRWe+fIjFUuOfUH7T3Mtmn25La2bbG8RxAT8yHF9ep+mK6xwO2Q2rZ528vKcCrjLceKVpxhKflBHqCBmlS3o1CdT7qakvYk/EMmUpphYTy/u09Ej9K4OC/xvNztfiP+jNJdFSRk9u9vNTa/sl5uGnG2H/2UAFMKV87pIzhI9cVgdFau1Rt3qpU+yvPW+awvllQ3shLmD1StNN/wQaeFs2hRc3WWQ9dJC3+dBypSAcJ5qyu/wBsTYtxI67lbg1bNRIT8kpIwl7+VwDv9e9LvUcLMqyjKXVXvX2Co1FOPkudmd3tKbs2VdulIYj3Xw+WXbXyDzjzKc/iTS7cSeyczQE57VenOaRYZDxLkdDZ5ohPl0/h965Jf7NqnbzV4iz0SbNeYa+Zl9BxzY7KSr+IGm24cd8ImvoLmkNcGGm7hvw0lzARNTjr0PTm9RWCzGt4uazMKXVW/YttWLpn5E/tip9+uMW0WWO5JnSlhtttAJOT0648qenh82etW2dgFwuiI0rUDyeeTMKf9UO/IknsB6+dblaNDbf6Mcfvtt0/abQ4lBLslDYRyp7nqe1KfxLb+ztUTJGmdHT1xrA38kiU38q5J8wD5J+neqZPI5fPzVNa6Y+4jXClbMnxOcQBv4k6O0Y+8zBQsom3BCyku46FCf5feubbFbTah3GvTSozC4liZcHxU5xJwvByUo/vE/pWW2B2KvW4sli7XJLlt002sKU4oHnlYPZI9PenysNnt1jtUe12uK3GiMICG220hIAH0qcvkqeJq/DYfeXvIQrdj6pHnnv9pZjRe6Fw07CjuMW/w0Li86+YqSR3z370w/AVfxL29uWnXFshy2zVKQgH5yhfzcxH1yK07j4078LqKwapZj8qH21Rn3efuoHKRj6VrXBLfxad4X7S44y0xdYhSOf8Slp6pSn9a28lvP4JWPvKJWOoW6K3G5YlWvd+JfUpeLVziJClqHyBSPlwD9OtcgeHPGOe2Kb7jq02LntfHvjMfxJFqlJWXOfHI2rorp59cUn0FXixEn1HnXa9I5Tvwuh/2mHJhqexmeAK/kwr/pd59xRjuiSy0U/KlKu+D65prFkJQpSsAAZJpBeEa9Cx78RI70tbEe5R3GOQfhdc6FIP5Gm24iNajQ21V1u6HAiU4j4eL16lxfQY+nU14nn8Jw5JwivqNumW4bFd2zSdZcZs66Rv9Jwo8557xF/MEIT0SRn0Pann86VLgG0lIRbbzree0C5Pc8GOtSTzEA5UoH0JP6U1nnWjytilcoLxFaLRfYMmijAorlliNFFFXKhUFdqjUDQHOeITbiLuToCVaygC4MJL0FzzS4B2z6HtXDuC/cWVaZ07a/VC1MSIilqh+KcFPL+Nvr+Ypt/I0qfFjtPdYV6TujohLqZjXWaxGR84IH+tGPbvXVwLIWxeLa9J+H+TIk/7kcE3Uu69S7u6hvKnWnkKlqbaW2MJKE9BWtXJp2XIjwGEFbsh1LSEjuoqIAA/OqkGQiQFOqVl1aiV578x71tmyFgVqre7T1uVHU/GYf8AiZACscqUdc/nivqU3HA4xrf0xNBfPZ3HQvDsbbfh8dKVOxk2yzhtBI51IWU4H/mNedqQ7MKUFX7+Y+BzHzUpXf8AWnR47r4bftrb7C34yV3KWMqbVhPIgZKVeoOR+VLJsPYhqHePTdqPheG2+H3A4nmSpKOuMV5H0+vgYV2XL32bV3zSUT0A0BbI+lNubVAWllhmDBQXS2MIGE5Uf8a1HSG/+22qNWtaYtV2eXPecU20FxlpQ4oeQURjyrLcQ18b07szqCaJRiOfClllaR15ldAB9s0m3BlaGLtvrb3JTK3REjOyUrGcJcGACfzNedxcCOTjXZNj+n/JmlPpaSHY3W2503uNYlWu+xQVJBLElsAOsq9Un/CkN3h2p1RtdfEmcl163lzMK5s5x0PTJH4VCvSRXnWN1DZLXqC0vWq8wWZsN9JStp1PMD/+1XjOWtwXrzD3RE4Kf3PPfWW8etdT7eRtIXe4NLhNEeM+kHxZCR+EKPt+tbnw3cPzutmmNTaq8WLYQvLMVPyrk48znsn+tbhe+HjSGh9dNaru+rIEbSUVzxzb5qeZaj5I9FDP3rE7rcT858O2XbiG1bre1+7RPcSApSQMfIjHy/WvRyyXlQ+DxkOlS8sxJKL3MYvXG4Gg9qLAzEuE2PDSyzyxIDPVxaR0ASkf41ybbXigVq3daPpyRZWLfZ5qi3EfccPi8/kFDt1pY9O6f1puJdn5cWFdNQSU5U9KeUVhHTPVaug+lYyz3Jyxattl2aWGXrdNQpRIB5OVWFfpmpq9N4yosUrOqxL29iHe3Jduw7vGVptV92YmSmo6HJFsdTJSpSuXkT2UR6+VJPoO+O6f1tp/UDL6mDFmNlbiU8xCCcK6fQmvSC9R4msNuJMZKWpTNztx5AvolZUj5c+nXFeZFxiPQH5tud5Uvw31IISegKT5VT0vL42PdiSJvWpKR6T7o2hrWO1N3tzbKZAmQFLZSo8oKuXmSfbrivOayczSXI7pAcZUUKAOeoOK9CeHe/o1Zs1Yp7jrj7nw3w8hTicFS0fKqkb3Vsh0tvDqKzKaaZbEtTrKGz8oQrqP61b0hc6cqzHkRkx3FSLHTM5di1xZb62+qP8ABzEOLdSnJCM4V0+ma6pvZqibvzuxaND6TfU9Z2CD4qQQlR/jcPsOwrjMp5x51uFDZXIlPKCGmmxlS1HyAp0uE/aBWhLArUF7QDfrkhKloUjCoyO/h/X1roeqZY2PNX7/AJmuyKY/VLt7HWtB6at2kdKQdP2tkNx4jQQMD8Rx1Ufcms550Cg183lJye35NvyRoqWio0TsmoooqSoUGiigIdqldabebU26kKQoEKB7EHvU5qHWgT0J3xNbBmyB7WWgoby45WVzoDY5g2O5Wgd8eorW+Cq56Qgbhy51/ujUS8ut/DwGHQpIOfxHm/Dk9sGnmUlJSUqSCD0II71wzfLh10/rZv8Aamm0RrBfWzzJdab5G3TnPzhPY/zDrXfo5mdmM8O9/K/co4Lq6kcT44r0q57rwbQgL8O3Qkkq58oUV/NkD74q/wCA6x/G68vmoFlBRCjhhKVIyeZR7g+XauP7maV1rpC+SWdZQZ63irkTPdCltvADpyuHoen5UzvAzddLQtvpEBN/huXd+Sp9+KohDjQ7Ade4967ec4Y3DKqiXVvzoxwTlZuRc8eV8dg7XwrOy4z/AKQmAOIV+IpSM5H3rSv7Pi0yDcdS3vKPhwluMB/FzDKvy61i+PS5/H6/sdnQyOWLDLodCs83Me2KsNk93tP7T7XSI0K2SLhqWZKUt5tRKGkjslRVj0x0FatGFfLhumqLbky8ppWdx173dbfZoLs+5zGYkZpPMtx1YSlI+ppad4uKiDCQ9a9vmkzpaVcqp76P3CR/KO6v6Uu+rtX7h7walZZkmXc3lK5GIENJDSM+w6fc12nabhRmS0s3LcCaYrXyrFujH5vcLV2/KsFXGYeBH4mbLcv+KJ65S+k4UTrzdTU4Cv2jqS6KyQnu20CfySKYvafhRjNFq47iTEylg5FviqIb7dlK6En2FMjpDSun9J2tFs0/aY0CMjslpHUn1J7n71mulauZz9tsfhY66IfoFWl3fcx9isVnsdrRbLTb48OGhPKGmkADGMdfWvOXiA081prd/UdoZ5A0p7x20oThKQv5gPtmvSvI9aTzj20sti92TV7Day08gxJCsAJCh1T75NT6byvhZqUn9XYXLcDsfCNqJWodlrT4r7z0iEFRXVOd8pOPyxSncUNhFh31vbAUnkm8spASnlACxnFdR4Bb6mHP1JYXwlDSgiWlxbmAP4SMfbNYzjquWmbhquzyrZfokm5RGixKiM4UUpJ5gokfXGK6WBXPC5uUNdm2Vm1OrZunAlqdCNDXyzTpS0Itkjxgp04bbbUM9D5dQa5TxaX/AExrHdCC7oqSu7XAtCO+IzeULXn5Qkj8R9a1/aXbfcbXgkQ9PCbabJLQPipbxW3HeA8v5/tmnB2a2P0htzEYfYhNzrylH7ye8nKsnvyj+EVjzLcfjs+eRXPqb8Jf7JinZDpZovC9sOzppmPq7WUXxNQr+dhhSspipPbp/f8A6UxwSB0FQA6dqimvM5WVZlWu2x7bMi1FaRGiiitcBRRRQFJK8+dTpPvWPbeFV0Oj1oC7oqglwGqiVigJ6KgFA1GgCodftUahig2Y++Wa13yEuDd4EadGWPmafbC0n864Br3hQ0xdLi9ctJ3aVp19eVJZbHM0FeWPMD70x+KMVnpybaX8kiez8iB672M3gs9wXKmRHdTttAIRKYfLquXyHKr5h+Vc/tzdvt2pmY+vrTe4kAEh5phoIeOPTm8q9O8e5qzuNotlxbUifAjSkKSUkOtJV0PcdRXoaPVORCr4M1tfp2MTpi3sXjaveXh80xaVR7C2qxhOErL8NXivYH4ioZJ/OuoWzfDau4RESWdZ2xCVdkuu8ih9QetU73sXtTd5CXpWj4CFpGB4ILQP1CSM1q1y4VtppkxchMK5RQr/AKpiWQgfQEE/rXInLDtl1Scv8mVNpdjdf88W15/7bWb/AHgVjr1vztPakIW/rCC6FnADBLhH15c4rUv+CXtP/s7z/vg/+tX1n4Xdo7c6ta7VMm8wxyyZRUE/TGKq44K95Dciy1LxVbXWv5YT1wurhbKk/DR/lz5JJURg1x7dfeS570acXpbTu29wfStYW3IWCtbTie5HKMdvemc07s1tlYMG36Rt3OF84W634qgfYqzit3iQocRstxIzMdBOSltASM/arwycaiSlVBtr82Q035Yi+3vDbuheH0uz3m9MxVoAcWt4+KtJ645Uf44rvW2nDHobSsr9oXguajnfwqmJHhpOe4R5n65ruvL70Yq2XzOVlPcnr7FYwjFFCFFjwoyI0RlthlAwhDaQlKR7AVcVDFRrlF9hRRRUkBRRRQBRRRQGtNSR6/rVyiR71rzLy/WrpDyqEmebf96rJe61hEPL9auG3VYoRozCHc+dVEudKxbbivWqyHFUGjIJXmpgoH0qyQ4qqiVmgLvIoq3CjU6VGgKtFSgmphQEMUZqNFCCGaO9RooCFAqNFAFFFFCQooooAooooAooooAooooD/9k=" alt="ММИ логотип" class="logo-img">
+          <div class="logo-text-block">
+            <span class="logo-company">Магнитогорск&nbsp;<em>Металл</em>&nbsp;Импорт</span>
+            <div class="logo-divider"></div>
+            <span class="logo-type">ТОО &nbsp;·&nbsp; Металлопрокат &nbsp;·&nbsp; Казахстан</span>
+            <span class="logo-since">Est. 2018 &nbsp;·&nbsp; БИН 181040033886</span>
+          </div>
+        </a>
+
+        <!-- DESKTOP NAV -->
+        <nav class="main-nav" aria-label="Основное меню">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#hero" class="nav-link">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a href="#advantages" class="nav-link">О компании</a>
+            </li>
+            <li class="nav-item">
+              <a href="#catalog" class="nav-link">
+                Каталог <span class="nav-arrow"></span>
+              </a>
+              <div class="dropdown" role="menu">
+                <div class="dropdown-header">Продукция</div>
+                <a href="#sandvich" role="menuitem">Сэндвич-панели</a>
+                <a href="#metal" role="menuitem">Металлопрокат</a>
+                <a href="#pipes" role="menuitem">Трубы стальные</a>
+                <a href="#fittings" role="menuitem">Фитинги и задвижки</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">
+                Услуги <span class="nav-arrow"></span>
+              </a>
+              <div class="dropdown" role="menu">
+                <div class="dropdown-header">Что мы делаем</div>
+                <a href="#services" role="menuitem">Погрузка и отгрузка</a>
+                <a href="#services" role="menuitem">Доставка по Казахстану</a>
+                <a href="#services" role="menuitem">Сборные ж/д вагоны</a>
+                <a href="#services" role="menuitem">Консультации и подбор</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#news" class="nav-link">Акции</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- CTA BLOCK -->
+        <div class="header-cta-block">
+          <div class="header-phone-block">
+            <span class="header-phone-label">Звоните</span>
+            <a href="tel:+77075545148" class="header-phone-num">+7 (707) 554-51-48</a>
+          </div>
+          <button class="search-btn" onclick="openSearchModal()" aria-label="Поиск" title="Поиск по каталогу">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+          </button>
+          <div class="header-btn-wrap">
+            <button class="btn-callback" onclick="openModal()" aria-label="Заказать обратный звонок">
+              Заказать звонок
+              <span>Ответим за 30 мин</span>
+            </button>
+          </div>
+          <button class="burger" id="burgerBtn" aria-label="Открыть меню" onclick="toggleMobileNav()">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<!-- ===== MOBILE NAV OVERLAY ===== -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay" onclick="toggleMobileNav()"></div>
+
+<!-- ===== MOBILE NAV DRAWER (slides from LEFT, styled like header) ===== -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Мобильное меню">
+
+  <!-- Header strip — mirrors desktop header -->
+  <div class="mobile-nav-head">
+    <a href="#hero" onclick="toggleMobileNav()" style="display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;overflow:hidden">
+      <img src="data:image/png;base64,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" alt="ММИ" style="width:38px;height:38px;object-fit:contain;background:white;border-radius:50%;padding:3px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.4)">
+      <div style="min-width:0">
+        <div style="font-family:var(--font-display);font-size:0.75rem;font-weight:700;color:#fff;letter-spacing:0.8px;text-transform:uppercase;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Магнитогорск <span style="color:var(--gold)">Металл</span></div>
+        <div style="font-size:0.56rem;color:rgba(255,255,255,0.32);letter-spacing:1.5px;text-transform:uppercase;margin-top:1px">ТОО · Казахстан · Est.2018</div>
+      </div>
+    </a>
+    <button class="mobile-nav-close" onclick="toggleMobileNav()" aria-label="Закрыть">✕</button>
+  </div>
+
+  <!-- Contacts bar — mirrors topbar exactly -->
+  <div class="mnav-contacts-bar">
+    <a href="tel:+77075545148">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <strong>+7 (707) 554-51-48</strong>
+    </a>
+    <a href="mailto:Magnitogorsk.Metall.Import@mail.ru">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      <strong>Magnitogorsk.Metall.Import@mail.ru</strong>
+    </a>
+    <a href="#contacts" onclick="toggleMobileNav()">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      г. Каскелен, ул. Жазира 5/3
+    </a>
+  </div>
+  <div class="mnav-hours">
+    <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+    Пн–Пт: 08:30–17:30 &nbsp;|&nbsp; Обед: 12:30–13:30
+  </div>
+
+  <!-- Navigation links -->
+  <div class="mobile-nav-links">
+    <a href="#hero" onclick="toggleMobileNav()">
+      <span class="mnav-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span>
+      Главная
+    </a>
+    <a href="#advantages" onclick="toggleMobileNav()">
+      <span class="mnav-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></span>
+      О компании
+    </a>
+    <div class="mnav-section-label">📦 Каталог продукции</div>
+    <a href="#sandvich" class="sub" onclick="toggleMobileNav()">Сэндвич-панели</a>
+    <a href="#metal" class="sub" onclick="toggleMobileNav()">Металлопрокат</a>
+    <a href="#pipes" class="sub" onclick="toggleMobileNav()">Трубы стальные</a>
+    <a href="#fittings" class="sub" onclick="toggleMobileNav()">Фитинги и задвижки</a>
+    <a href="#services" onclick="toggleMobileNav()">
+      <span class="mnav-icon"><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/></svg></span>
+      Услуги
+    </a>
+    <a href="#news" onclick="toggleMobileNav()">
+      <span class="mnav-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span>
+      Новости и акции
+    </a>
+    <a href="#price-lists" onclick="toggleMobileNav()">
+      <span class="mnav-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/></svg></span>
+      Прайс-листы
+    </a>
+    <a href="#contacts" onclick="toggleMobileNav()">
+      <span class="mnav-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+      Контакты
+    </a>
+  </div>
+
+  <div class="mobile-nav-footer">
+    <button class="btn btn-primary mnav-callback-btn" onclick="toggleMobileNav(); openModal();" style="width:100%;justify-content:center;display:flex;flex-direction:column;align-items:center;gap:2px;padding:14px 20px;">
+      <span style="font-size:0.88rem;letter-spacing:1.5px;">📞 Заказать звонок</span>
+      <span style="font-size:0.65rem;opacity:0.7;font-weight:400;text-transform:none;letter-spacing:0;">Ответим за 30 минут</span>
+    </button>
+  </div>
+
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-geometric"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span>ТОО «Магнитогорск Металл Импорт»</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="thin">Надёжные</span>
+        <span class="accent">поставки</span>
+        металлопроката
+      </h1>
+      <p class="hero-desc">
+        Прямые поставки металлопроката, труб, фитингов и сэндвич-панелей в Казахстане. Широкий ассортимент, конкурентные цены, формирование сборных ж/д вагонов.
+      </p>
+      <div class="hero-actions">
+        <a href="#catalog" class="btn btn-primary">Смотреть каталог</a>
+        <a href="#contacts" class="btn btn-outline">Получить прайс</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">7<span>+</span></div>
+          <div class="hero-stat-label">Лет на рынке</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">500<span>+</span></div>
+          <div class="hero-stat-label">Позиций в ассортименте</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">24<span>ч</span></div>
+          <div class="hero-stat-label">Срок ответа на запрос</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">Листать</div>
+</section>
+
+<!-- ===== ADVANTAGES ===== -->
+<section id="advantages" aria-labelledby="adv-title">
+  <div class="container">
+    <div class="advantages-header fade-in">
+      <div class="section-label">Почему выбирают нас</div>
+      <h2 class="section-title" id="adv-title">Наши преимущества</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="advantages-grid">
+      <article class="advantage-card fade-in">
+        <div class="advantage-num">01</div>
+        <div class="advantage-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+        </div>
+        <div class="advantage-title">Прямые поставки</div>
+        <p class="advantage-text">Работаем напрямую с заводами-производителями России, Китая и Казахстана. Минимальные наценки, максимальная прозрачность.</p>
+      </article>
+      <article class="advantage-card fade-in">
+        <div class="advantage-num">02</div>
+        <div class="advantage-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
+        </div>
+        <div class="advantage-title">Широкий ассортимент</div>
+        <p class="advantage-text">Более 500 позиций: арматура, листы, трубы, профиль, фитинги, задвижки, фланцы, сэндвич-панели и многое другое.</p>
+      </article>
+      <article class="advantage-card fade-in">
+        <div class="advantage-num">03</div>
+        <div class="advantage-icon">
+          <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+        </div>
+        <div class="advantage-title">Конкурентные цены</div>
+        <p class="advantage-text">Гибкая система скидок для постоянных клиентов. Специальные условия при заказе от 5 и 20 тонн. Прайс-лист обновляется еженедельно.</p>
+      </article>
+      <article class="advantage-card fade-in">
+        <div class="advantage-num">04</div>
+        <div class="advantage-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+        </div>
+        <div class="advantage-title">Быстрая доставка</div>
+        <p class="advantage-text">Собственный склад в г. Каскелен. Организуем доставку по Алматы и Казахстану. Формируем сборные ж/д вагоны для экономии на логистике.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CATALOG OVERVIEW ===== -->
+<section id="catalog" aria-labelledby="cat-title">
+  <div class="container">
+    <div class="catalog-header fade-in">
+      <div>
+        <div class="section-label">Наша продукция</div>
+        <h2 class="section-title" id="cat-title">Каталог продукции</h2>
+        <div class="divider"></div>
+      </div>
+      <a href="#sandvich" class="btn btn-primary">Все позиции</a>
+    </div>
+    <div class="catalog-grid fade-in">
+      <a href="#sandvich" class="cat-card" title="Купить сэндвич-панели в Казахстане - стеновые и кровельные панели" data-keywords="сэндвич-панели, стеновые панели, кровельные панели, утеплитель, пенополистирол, минеральная вата, панели 1200 мм">
+        <div class="cat-bg cat-bg-panels" role="img" aria-label="Сэндвич-панели стеновые и кровельные с утеплителем"></div>
+        <div class="cat-overlay"></div>
+        <div class="cat-content">
+          <span class="cat-badge">Строительство</span>
+          <div class="cat-title">Сэндвич-панели</div>
+          <p class="cat-desc">Стеновые и кровельные сэндвич-панели с утеплителем из пенополистирола или минеральной ваты. Ширина 950–1200 мм, толщина 50–150 мм.</p>
+          <span class="cat-link">Подробнее</span>
+        </div>
+      </a>
+      <a href="#metal" class="cat-card" title="Купить металлопрокат в Казахстане - арматура, листы, уголок, швеллер" data-keywords="металлопрокат, арматура, листы, уголок, швеллер, балки, сталь, ГОСТ, Казахстан">
+        <div class="cat-bg cat-bg-metal" role="img" aria-label="Металлопрокат: арматура, листы г/к и х/к, балки, профиль"></div>
+        <div class="cat-overlay"></div>
+        <div class="cat-content">
+          <span class="cat-badge">Прокат</span>
+          <div class="cat-title">Металлопрокат</div>
+          <p class="cat-desc">Арматура, листы г/к и х/к, уголок, швеллер, балки, профиль, квадрат, полоса. ГОСТ стандарты, сталь 3, 09Г2С.</p>
+          <span class="cat-link">Подробнее</span>
+        </div>
+      </a>
+      <a href="#pipes" class="cat-card" title="Купить трубы стальные в Казахстане - ВГП, электросварные, бесшовные трубы" data-keywords="трубы, ВГП, электросварные трубы, бесшовные трубы, оцинкованные трубы, профильные трубы, трубопровод">
+        <div class="cat-bg cat-bg-pipes" role="img" aria-label="Трубы стальные: водогазопроводные, электросварные, бесшовные, профильные"></div>
+        <div class="cat-overlay"></div>
+        <div class="cat-content">
+          <span class="cat-badge">Трубопровод</span>
+          <div class="cat-title">Трубы</div>
+          <p class="cat-desc">Водогазопроводные, электросварные, бесшовные, оцинкованные трубы. Диаметр от 15 до 630 мм. Профильные трубы.</p>
+          <span class="cat-link">Подробнее</span>
+        </div>
+      </a>
+      <a href="#fittings" class="cat-card" title="Купить фитинги и задвижки в Казахстане - краны, фланцы, клапаны" data-keywords="фитинги, задвижки, краны шаровые, фланцы, клапаны, вентили, компенсаторы, трубопроводная арматура">
+        <div class="cat-bg cat-bg-fittings" role="img" aria-label="Фитинги и задвижки: задвижки, краны шаровые, фланцы, клапаны"></div>
+        <div class="cat-overlay"></div>
+        <div class="cat-content">
+          <span class="cat-badge">Арматура</span>
+          <div class="cat-title">Фитинги и задвижки</div>
+          <p class="cat-desc">Задвижки стальные и чугунные, краны шаровые, фланцы, фитинги ст. и ПЭ, компенсаторы, фильтры, счётчики.</p>
+          <span class="cat-link">Подробнее</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SANDVICH PANELS SECTION ===== -->
+<section id="sandvich" class="products-section" aria-labelledby="sandvich-title">
+  <div class="container">
+    <div class="products-section-header fade-in">
+      <div class="section-label">Каталог · Строительство</div>
+      <h2 class="section-title" id="sandvich-title">Сэндвич-панели</h2>
+      <div class="divider"></div>
+      <p style="color:var(--muted);font-size:0.9rem;margin-top:12px;max-width:600px;">Производство Казахстан / Россия. Сталь 0,45 мм. Цены указаны в тенге с НДС.</p>
+    </div>
+    <div class="tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="switchTab(this,'tab-wall')">Стеновые (1200 мм)</button>
+        <button class="tab-btn" onclick="switchTab(this,'tab-roof')">Кровельные (950 мм)</button>
+      </div>
+      <div id="tab-wall" class="tab-panel active">
+        <div class="product-cards">
+          <div class="product-card fade-in">
+            <div class="product-card-head">
+              <div class="product-card-type">Стеновые · Пенополистирол</div>
+              <div class="product-card-title">Сэндвич-панели стеновые — Пенополистирол</div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-specs-row">
+                <div class="spec-item"><div class="spec-label">Ширина</div><div class="spec-val">1200 мм</div></div>
+                <div class="spec-item"><div class="spec-label">Утеплитель</div><div class="spec-val">Пенополистирол</div></div>
+                <div class="spec-item"><div class="spec-label">Плотность</div><div class="spec-val">25 кг/м³</div></div>
+              </div>
+              <div class="price-rows">
+                <div class="price-row"><span class="thickness-tag">50 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">11 275 ₸</div></div><div class="price-col"><div class="p-unit">м²</div><div class="p-val">9 425 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">80 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">11 875 ₸</div></div><div class="price-col"><div class="p-unit">м²</div><div class="p-val">9 925 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">100 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">12 025 ₸</div></div><div class="price-col"><div class="p-unit">м²</div><div class="p-val">10 050 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">120 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">12 325 ₸</div></div><div class="price-col"><div class="p-unit">м²</div><div class="p-val">10 300 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">150 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">12 625 ₸</div></div><div class="price-col"><div class="p-unit">м²</div><div class="p-val">10 550 ₸</div></div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-card-head">
+              <div class="product-card-type">Стеновые · Минеральная вата</div>
+              <div class="product-card-title">Сэндвич-панели стеновые — Базальтовая минплита</div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-specs-row">
+                <div class="spec-item"><div class="spec-label">Ширина</div><div class="spec-val">1200 мм</div></div>
+                <div class="spec-item"><div class="spec-label">Утеплитель</div><div class="spec-val">Минплита</div></div>
+                <div class="spec-item"><div class="spec-label">Плотность</div><div class="spec-val">100 кг/м³</div></div>
+              </div>
+              <div class="price-rows">
+                <div class="price-row"><span class="thickness-tag">50 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">13 375 ₸</div></div><div class="price-col"><div class="p-unit">м²</div><div class="p-val">11 175 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">80 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">13 975 ₸</div></div><div class="price-col"><div class="p-unit">м²</div><div class="p-val">11 675 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">100 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">14 675 ₸</div></div><div class="price-col"><div class="p-unit">м²</div><div class="p-val">12 275 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">120 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">15 475 ₸</div></div><div class="price-col"><div class="p-unit">м²</div><div class="p-val">12 925 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">150 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">16 675 ₸</div></div><div class="price-col"><div class="p-unit">м²</div><div class="p-val">13 925 ₸</div></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tab-roof" class="tab-panel">
+        <div class="product-cards">
+          <div class="product-card fade-in">
+            <div class="product-card-head">
+              <div class="product-card-type">Кровельные · Пенополистирол</div>
+              <div class="product-card-title">Сэндвич-панели кровельные — Пенополистирол</div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-specs-row">
+                <div class="spec-item"><div class="spec-label">Ширина</div><div class="spec-val">950 мм</div></div>
+                <div class="spec-item"><div class="spec-label">Утеплитель</div><div class="spec-val">Пенополистирол</div></div>
+                <div class="spec-item"><div class="spec-label">Плотность</div><div class="spec-val">25 кг/м³</div></div>
+              </div>
+              <div class="price-rows">
+                <div class="price-row"><span class="thickness-tag">100 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">10 675 ₸</div></div><div class="price-col"><div class="p-unit">м³</div><div class="p-val">11 225 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">120 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">11 175 ₸</div></div><div class="price-col"><div class="p-unit">м³</div><div class="p-val">11 755 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">150 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">11 675 ₸</div></div><div class="price-col"><div class="p-unit">м³</div><div class="p-val">12 275 ₸</div></div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-card-head">
+              <div class="product-card-type">Кровельные · Минеральная вата</div>
+              <div class="product-card-title">Сэндвич-панели кровельные — Базальтовая минплита</div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-specs-row">
+                <div class="spec-item"><div class="spec-label">Ширина</div><div class="spec-val">950 мм</div></div>
+                <div class="spec-item"><div class="spec-label">Утеплитель</div><div class="spec-val">Минплита</div></div>
+                <div class="spec-item"><div class="spec-label">Плотность</div><div class="spec-val">100 кг/м³</div></div>
+              </div>
+              <div class="price-rows">
+                <div class="price-row"><span class="thickness-tag">100 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">12 825 ₸</div></div><div class="price-col"><div class="p-unit">м³</div><div class="p-val">13 475 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">120 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">13 475 ₸</div></div><div class="price-col"><div class="p-unit">м³</div><div class="p-val">14 175 ₸</div></div></div></div>
+                <div class="price-row"><span class="thickness-tag">150 мм</span><div class="price-cols"><div class="price-col"><div class="p-unit">м.п.</div><div class="p-val">14 625 ₸</div></div><div class="price-col"><div class="p-unit">м³</div><div class="p-val">15 375 ₸</div></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== METAL SECTION ===== -->
+<section id="metal" class="products-section" aria-labelledby="metal-title">
+  <div class="container">
+    <div class="products-section-header fade-in">
+      <div class="section-label">Каталог · Металлопрокат</div>
+      <h2 class="section-title" id="metal-title">Металлопрокат</h2>
+      <div class="divider"></div>
+      <p style="color:var(--muted);font-size:0.9rem;margin-top:12px;max-width:600px;">Актуальные цены от 21.04.2025. Погрузка только в открытые машины. Пн–Пт 08:30–17:30.</p>
+    </div>
+    <div class="tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="switchTab(this,'m-armatura')">Арматура</button>
+        <button class="tab-btn" onclick="switchTab(this,'m-list')">Листы</button>
+        <button class="tab-btn" onclick="switchTab(this,'m-ugol')">Уголок / Балки</button>
+        <button class="tab-btn" onclick="switchTab(this,'m-other')">Прочее</button>
+      </div>
+
+      <div id="m-armatura" class="tab-panel active">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Наименование / ГОСТ</th><th>Размер (мм)</th><th>Цена 1 тн (тг)</th><th>Вес 1 шт (кг)</th><th>Длина</th><th>Цена 1 м (тг)</th></tr></thead>
+            <tbody>
+              <tr><td>Арматура АI (А240) ст.3сп/пс ГОСТ 5781-82</td><td>8</td><td class="price-val">367 000</td><td>2,5</td><td>6 м</td><td>153 ₸</td></tr>
+              <tr><td>Арматура АI (А240) ст.3сп/пс ГОСТ 5781-82</td><td>10</td><td class="price-val">367 000</td><td>4</td><td>6 м</td><td>245 ₸</td></tr>
+              <tr><td>Арматура АI (А240) ст.3сп/пс ГОСТ 5781-82</td><td>12</td><td class="price-val">357 000</td><td>11</td><td>12 м</td><td>327 ₸</td></tr>
+              <tr><td>Арматура АI (А240) ст.3сп/пс ГОСТ 5781-82</td><td>14</td><td class="price-val">357 000</td><td>15</td><td>12 м</td><td>446 ₸</td></tr>
+              <tr><td>Арматура АI (А240) ст.3сп/пс ГОСТ 5781-82</td><td>16</td><td class="price-val">357 000</td><td>19,6</td><td>12 м</td><td>583 ₸</td></tr>
+              <tr><td>Арматура АI (А240) ст.3сп/пс ГОСТ 5781-82</td><td>20</td><td class="price-val">357 000</td><td>30</td><td>12 м</td><td>893 ₸</td></tr>
+              <tr><td>Арматура АI (А240) ст.3сп/пс ГОСТ 5781-82</td><td>25</td><td class="price-val">357 000</td><td>47</td><td>12 м</td><td>1 398 ₸</td></tr>
+              <tr><td>Арматура АI (А240) ст.3сп/пс ГОСТ 5781-82</td><td>32</td><td class="price-val">372 000</td><td>77</td><td>12 м</td><td>2 291 ₸</td></tr>
+              <tr><td>Арматура АIII (А400/А500) ГОСТ 5781-82</td><td>10</td><td class="price-val">362 000</td><td>8</td><td>11,7/12 м</td><td>241 ₸</td></tr>
+              <tr><td>Арматура АIII (А400/А500) ГОСТ 5781-82</td><td>12</td><td class="price-val">352 000</td><td>11</td><td>11,7/12 м</td><td>323 ₸</td></tr>
+              <tr><td>Арматура АIII (А400/А500) ГОСТ 5781-82</td><td>14</td><td class="price-val">347 000</td><td>15</td><td>11,7/12 м</td><td>434 ₸</td></tr>
+              <tr><td>Арматура АIII (А400/А500) ГОСТ 5781-82</td><td>16</td><td class="price-val">347 000</td><td>19,6</td><td>11,7/12 м</td><td>567 ₸</td></tr>
+              <tr><td>Арматура АIII (А400/А500) ГОСТ 5781-82</td><td>18</td><td class="price-val">347 000</td><td>25</td><td>11,7/12 м</td><td>723 ₸</td></tr>
+              <tr><td>Арматура АIII (А400/А500) ГОСТ 5781-82</td><td>20</td><td class="price-val">347 000</td><td>30</td><td>11,7/12 м</td><td>868 ₸</td></tr>
+              <tr><td>Арматура АIII (А400/А500) ГОСТ 5781-82</td><td>22</td><td class="price-val">347 000</td><td>37</td><td>11,7/12 м</td><td>1 070 ₸</td></tr>
+              <tr><td>Арматура АIII (А400/А500) ГОСТ 5781-82</td><td>25</td><td class="price-val">347 000</td><td>47</td><td>11,7/12 м</td><td>1 359 ₸</td></tr>
+              <tr><td>Арматура АIII (А400/А500) ГОСТ 5781-82</td><td>28</td><td class="price-val">347 000</td><td>59</td><td>11,7/12 м</td><td>1 706 ₸</td></tr>
+              <tr><td>Арматура АIII (А400/А500) ГОСТ 5781-82</td><td>32</td><td class="price-val">347 000</td><td>77</td><td>11,7/12 м</td><td>2 227 ₸</td></tr>
+              <tr><td>Арматура АIII (Киргизия) А-500</td><td>10</td><td class="price-val">335 000</td><td>8</td><td>11,7 м</td><td>229 ₸</td></tr>
+              <tr><td>Катанка ГОСТ 30136-95 ТУ 14-1-5282-94</td><td>6,5</td><td class="price-val">347 000</td><td>850</td><td>бухта</td><td>—</td></tr>
+              <tr><td>Катанка ГОСТ 30136-95 ТУ 14-1-5282-94</td><td>8</td><td class="price-val">347 000</td><td>850</td><td>бухта</td><td>—</td></tr>
+              <tr><td>Проволока ВР-1 ГОСТ 6727-80</td><td>2,8</td><td class="price-val">352 000</td><td>1100</td><td>бухта</td><td>—</td></tr>
+              <tr><td>Проволока ВР-1 ГОСТ 6727-80</td><td>3,0</td><td class="price-val">352 000</td><td>1100</td><td>бухта</td><td>—</td></tr>
+              <tr><td>Квадрат ст.3сп/пс (Россия)</td><td>10×10</td><td class="price-val">432 000</td><td>4,8</td><td>6,05 м</td><td>346 ₸</td></tr>
+              <tr><td>Квадрат ст.3сп/пс (Россия)</td><td>12×12</td><td class="price-val">422 000</td><td>6,95</td><td>6,05 м</td><td>489 ₸</td></tr>
+              <tr><td>Полоса ст.3сп/пс ГОСТ 380-2005</td><td>25×4</td><td class="price-val">452 000</td><td>5</td><td>6 м</td><td>377 ₸</td></tr>
+              <tr><td>Полоса ст.3сп/пс ГОСТ 380-2005</td><td>40×4</td><td class="price-val">432 000</td><td>8,3</td><td>6 м</td><td>598 ₸</td></tr>
+              <tr><td>Полоса ст.3сп/пс ГОСТ 380-2005</td><td>50×5</td><td class="price-val">432 000</td><td>12</td><td>6 м</td><td>864 ₸</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="m-list" class="tab-panel">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Наименование / ГОСТ</th><th>Толщина (мм)</th><th>Размер листа</th><th>Цена 1 тн (тг)</th><th>Вес 1 шт (кг)</th></tr></thead>
+            <tbody>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>2,0</td><td>1×2 м</td><td class="price-val">341 000</td><td>33</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>2,0</td><td>1,25×2,5 м</td><td class="price-val">341 000</td><td>53,7</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>2,5</td><td>1,25×2,5 м</td><td class="price-val">339 000</td><td>65</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>3,0</td><td>1,25×2,5 м</td><td class="price-val">339 000</td><td>82</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>4</td><td>1,5×6,0 м</td><td class="price-val">337 000</td><td>300</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>5</td><td>1,5×6,0 м</td><td class="price-val">337 000</td><td>365</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>6</td><td>1,5×6,0 м</td><td class="price-val">337 000</td><td>430</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>8</td><td>1,5×6,0 м</td><td class="price-val">337 000</td><td>580</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>10</td><td>1,5×6,0 м</td><td class="price-val">337 000</td><td>725</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>12</td><td>1,5×6,0 м</td><td class="price-val">337 000</td><td>865</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>14</td><td>1,5×6,0 м</td><td class="price-val">349 000</td><td>1 015</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>16</td><td>1,5×6,0 м</td><td class="price-val">349 000</td><td>1 144</td></tr>
+              <tr><td>Лист г/к ст.3сп/пс ГОСТ 19903-2015</td><td>20</td><td>1,5×6,0 м</td><td class="price-val">375 000</td><td>1 435</td></tr>
+              <tr><td>Лист г/к ст.09Г2С ГОСТ 19281-2014</td><td>6</td><td>1,5×6,0 м</td><td class="price-val">371 000</td><td>430</td></tr>
+              <tr><td>Лист г/к ст.09Г2С ГОСТ 19281-2014</td><td>8</td><td>1,5×6,0 м</td><td class="price-val">371 000</td><td>585</td></tr>
+              <tr><td>Лист г/к ст.09Г2С ГОСТ 19281-2014</td><td>10</td><td>1,5×6,0 м</td><td class="price-val">371 000</td><td>745</td></tr>
+              <tr><td>Лист х/к ст08кп/пс ГОСТ 1050-2013</td><td>1,0</td><td>1×2 м</td><td class="price-val">430 000</td><td>16</td></tr>
+              <tr><td>Лист х/к ст08кп/пс ГОСТ 1050-2013</td><td>1,2</td><td>1×2 м</td><td class="price-val">430 000</td><td>19,8</td></tr>
+              <tr><td>Лист х/к ст08кп/пс ГОСТ 1050-2013</td><td>1,5</td><td>1,25×2,5 м</td><td class="price-val">430 000</td><td>38</td></tr>
+              <tr><td>Лист х/к ст08кп/пс ГОСТ 1050-2013</td><td>2,0</td><td>1,25×2,5 м</td><td class="price-val">430 000</td><td>52</td></tr>
+              <tr><td>Лист рифлёный ст.3сп/пс ГОСТ 8568-77</td><td>2,6</td><td>1,25×2,5 м</td><td class="price-val">362 000</td><td>73</td></tr>
+              <tr><td>Лист рифлёный ст.3сп/пс ГОСТ 8568-77</td><td>3</td><td>1,25×2,5 м</td><td class="price-val">362 000</td><td>82</td></tr>
+              <tr><td>Лист рифлёный ст.3сп/пс ГОСТ 8568-77</td><td>4</td><td>1,5×6,0 м</td><td class="price-val">357 000</td><td>305</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="m-ugol" class="tab-panel">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Наименование / ГОСТ</th><th>Размер</th><th>Цена 1 тн (тг)</th><th>Вес 1 шт (кг)</th><th>Длина</th><th>Цена 1 м (тг)</th></tr></thead>
+            <tbody>
+              <tr><td>Уголок равнополочный ст.3сп/пс ГОСТ 8509-93</td><td>25×3</td><td class="price-val">443 000</td><td>7,77</td><td>6 м</td><td>574 ₸</td></tr>
+              <tr><td>Уголок равнополочный ст.3сп/пс ГОСТ 8509-93</td><td>32×3</td><td class="price-val">443 000</td><td>9,6</td><td>6 м</td><td>709 ₸</td></tr>
+              <tr><td>Уголок равнополочный ст.3сп/пс ГОСТ 8509-93</td><td>40×3</td><td class="price-val">443 000</td><td>11,1</td><td>6 м</td><td>820 ₸</td></tr>
+              <tr><td>Уголок равнополочный ст.3сп/пс ГОСТ 8509-93</td><td>50×4</td><td class="price-val">396 000</td><td>37,5</td><td>12 м</td><td>1 238 ₸</td></tr>
+              <tr><td>Уголок равнополочный ст.3сп/пс ГОСТ 8509-93</td><td>63×5</td><td class="price-val">396 000</td><td>59</td><td>12 м</td><td>1 947 ₸</td></tr>
+              <tr><td>Уголок равнополочный ст.3сп/пс ГОСТ 8509-93</td><td>75×6</td><td class="price-val">396 000</td><td>83</td><td>12 м</td><td>2 739 ₸</td></tr>
+              <tr><td>Уголок равнополочный ст.3сп/пс ГОСТ 8509-93</td><td>100×8</td><td class="price-val">396 000</td><td>147</td><td>12 м</td><td>4 851 ₸</td></tr>
+              <tr><td>Уголок равнополочный ст.3сп/пс ГОСТ 8509-93</td><td>125×10</td><td class="price-val">413 000</td><td>230</td><td>12 м</td><td>7 916 ₸</td></tr>
+              <tr><td>Швеллер ст.3сп/пс ГОСТ 535-2005</td><td>8</td><td class="price-val">425 000</td><td>88</td><td>12 м</td><td>3 117 ₸</td></tr>
+              <tr><td>Швеллер ст.3сп/пс ГОСТ 535-2005</td><td>10</td><td class="price-val">425 000</td><td>110</td><td>12 м</td><td>3 896 ₸</td></tr>
+              <tr><td>Швеллер ст.3сп/пс ГОСТ 535-2005</td><td>12</td><td class="price-val">452 000</td><td>130</td><td>12 м</td><td>4 897 ₸</td></tr>
+              <tr><td>Швеллер ст.3сп/пс ГОСТ 535-2005</td><td>14</td><td class="price-val">452 000</td><td>153</td><td>12 м</td><td>5 763 ₸</td></tr>
+              <tr><td>Швеллер ст.3сп/пс ГОСТ 535-2005</td><td>16</td><td class="price-val">452 000</td><td>175</td><td>12 м</td><td>6 592 ₸</td></tr>
+              <tr><td>Швеллер ст.3сп/пс ГОСТ 535-2005</td><td>20</td><td class="price-val">627 000</td><td>240</td><td>12 м</td><td>12 540 ₸</td></tr>
+              <tr><td>Балка Б1 ст.3сп/пс ГОСТ 26020-83</td><td>12Б1</td><td class="price-val">694 000</td><td>113</td><td>12 м</td><td>6 535 ₸</td></tr>
+              <tr><td>Балка Б1 ст.3сп/пс ГОСТ 26020-83</td><td>16Б1</td><td class="price-val">694 000</td><td>160</td><td>12 м</td><td>9 253 ₸</td></tr>
+              <tr><td>Балка Б1 ст.3сп/пс ГОСТ 26020-83</td><td>20Б1</td><td class="price-val">613 000</td><td>263</td><td>12 м</td><td>13 435 ₸</td></tr>
+              <tr><td>Балка Б1 ст.3сп/пс ГОСТ 26020-83</td><td>25Б1</td><td class="price-val">585 000</td><td>309</td><td>12 м</td><td>15 064 ₸</td></tr>
+              <tr><td>Балка Б1 ст.3сп/пс ГОСТ 26020-83</td><td>30Б1</td><td class="price-val">560 000</td><td>397</td><td>12 м</td><td>18 527 ₸</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="m-other" class="tab-panel">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Наименование / ГОСТ</th><th>Размер</th><th>Цена 1 тн (тг)</th><th>Вес 1 шт (кг)</th><th>Длина</th><th>Цена 1 м (тг)</th></tr></thead>
+            <tbody>
+              <tr><td>Трубы профильные ст.3сп/пс ГОСТ 13663-86</td><td>15×15×1,5</td><td class="price-val">405 000</td><td>4</td><td>6 м</td><td>270 ₸</td></tr>
+              <tr><td>Трубы профильные ст.3сп/пс ГОСТ 13663-86</td><td>20×20×1,5</td><td class="price-val">400 000</td><td>5,6</td><td>6 м</td><td>373 ₸</td></tr>
+              <tr><td>Трубы профильные ст.3сп/пс ГОСТ 13663-86</td><td>40×40×1,5</td><td class="price-val">395 000</td><td>11,1</td><td>6 м</td><td>731 ₸</td></tr>
+              <tr><td>Трубы профильные ст.3сп/пс ГОСТ 13663-86</td><td>50×50×2,0</td><td class="price-val">365 000</td><td>17,8</td><td>6 м</td><td>—</td></tr>
+              <tr><td>Трубы профильные ст.3сп/пс ГОСТ 13663-86</td><td>60×40×3,0</td><td class="price-val">375 000</td><td>25,9</td><td>6 м</td><td>1 619 ₸</td></tr>
+              <tr><td>Трубы профильные ст.3сп/пс ГОСТ 13663-86</td><td>80×80×3,0</td><td class="price-val">350 000</td><td>86</td><td>12 м</td><td>2 508 ₸</td></tr>
+              <tr><td>Трубы профильные ст.3сп/пс ГОСТ 13663-86</td><td>100×100×3,0</td><td class="price-val">350 000</td><td>108,4</td><td>12 м</td><td>3 162 ₸</td></tr>
+              <tr><td>Трубы профильные ст.3сп/пс ГОСТ 13663-86</td><td>100×100×4,0</td><td class="price-val">350 000</td><td>142,5</td><td>12 м</td><td>4 156 ₸</td></tr>
+              <tr><td>Трубы профильные ст.3сп/пс ГОСТ 13663-86</td><td>120×120×4,0</td><td class="price-val">365 000</td><td>172</td><td>12 м</td><td>5 232 ₸</td></tr>
+              <tr><td>Трубы профильные ст.3сп/пс ГОСТ 13663-86</td><td>140×140×5,0</td><td class="price-val">365 000</td><td>248,28</td><td>12 м</td><td>7 552 ₸</td></tr>
+              <tr><td>Трубы профильные ст.3сп/пс ГОСТ 13663-86</td><td>160×160×5,0</td><td class="price-val">365 000</td><td>286</td><td>12 м</td><td>8 699 ₸</td></tr>
+              <tr><td>Проволока ОК оцинкованная 1,2 мм</td><td>1,2</td><td class="price-val">490 000</td><td>25</td><td>бухта</td><td>—</td></tr>
+              <tr><td>Проволока ОК чёрная ГОСТ 3282-74</td><td>1,2</td><td class="price-val">480 000</td><td>25</td><td>бухта</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PIPES SECTION ===== -->
+<section id="pipes" class="products-section" aria-labelledby="pipes-title">
+  <div class="container">
+    <div class="products-section-header fade-in">
+      <div class="section-label">Каталог · Трубопровод</div>
+      <h2 class="section-title" id="pipes-title">Трубы стальные</h2>
+      <div class="divider"></div>
+      <p style="color:var(--muted);font-size:0.9rem;margin-top:12px;max-width:600px;">Прайс-лист от 11.01.2024. Цена за 1 тонну. Формируем сборные ж/д вагоны.</p>
+    </div>
+    <div class="tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="switchTab(this,'p-vgp')">ВГП (водогазопроводные)</button>
+        <button class="tab-btn" onclick="switchTab(this,'p-esv')">Электросварные</button>
+        <button class="tab-btn" onclick="switchTab(this,'p-bessh')">Бесшовные</button>
+        <button class="tab-btn" onclick="switchTab(this,'p-profil')">Профильные</button>
+      </div>
+      <div id="p-vgp" class="tab-panel active">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Ду (мм)</th><th>Толщина стенки</th><th>Длина (м)</th><th>Кол-во м в 1 тн</th><th>Цена 1 тн от 5 до 20 тн</th><th>Цена 1 тн до 5 тн</th><th>Цена 1 м (до 5 тн)</th></tr></thead>
+            <tbody>
+              <tr><td>15 (21,3)</td><td>2,5</td><td>8–11,7</td><td>862,1</td><td class="price-val">391 000</td><td class="price-val">393 000</td><td>456 ₸</td></tr>
+              <tr><td>15 (21,3)</td><td>2,8</td><td>8–11,7</td><td>781,3</td><td class="price-val">391 000</td><td class="price-val">393 000</td><td>503 ₸</td></tr>
+              <tr><td>20 (26,8)</td><td>2,5</td><td>8–11,7</td><td>666,7</td><td class="price-val">391 000</td><td class="price-val">393 000</td><td>590 ₸</td></tr>
+              <tr><td>20 (26,8)</td><td>2,8</td><td>8–11,7</td><td>602,4</td><td class="price-val">391 000</td><td class="price-val">393 000</td><td>652 ₸</td></tr>
+              <tr><td>25 (33,5)</td><td>2,8</td><td>8–11,7</td><td>471,7</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>803 ₸</td></tr>
+              <tr><td>25 (33,5)</td><td>3,2</td><td>8–11,7</td><td>418,4</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>906 ₸</td></tr>
+              <tr><td>32 (42,3)</td><td>2,8</td><td>8–11,7</td><td>366,3</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>1 035 ₸</td></tr>
+              <tr><td>40 (48)</td><td>3,0</td><td>8–11,7</td><td>300,3</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>1 262 ₸</td></tr>
+              <tr><td>50 (60)</td><td>3,0</td><td>8–11,7</td><td>237,0</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>1 599 ₸</td></tr>
+              <tr><td>50 (60)</td><td>3,5</td><td>8–11,7</td><td>204,9</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>1 850 ₸</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="p-esv" class="tab-panel">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Ду (мм)</th><th>Толщина</th><th>Длина</th><th>М в 1 тн</th><th>Цена 1 тн (5–20 тн)</th><th>Цена 1 тн (до 5 тн)</th><th>Цена 1 м</th></tr></thead>
+            <tbody>
+              <tr><td>57</td><td>3,0</td><td>8–12</td><td>249,9</td><td class="price-val">367 000</td><td class="price-val">369 000</td><td>1 476 ₸</td></tr>
+              <tr><td>57</td><td>3,5</td><td>8–12</td><td>216,5</td><td class="price-val">367 000</td><td class="price-val">369 000</td><td>1 705 ₸</td></tr>
+              <tr><td>76</td><td>3,0</td><td>8–12</td><td>185,2</td><td class="price-val">367 000</td><td class="price-val">369 000</td><td>1 993 ₸</td></tr>
+              <tr><td>89</td><td>3,0</td><td>8–12</td><td>157,2</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>2 347 ₸</td></tr>
+              <tr><td>108</td><td>3,0</td><td>8–12</td><td>128,7</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>2 945 ₸</td></tr>
+              <tr><td>108</td><td>4,0</td><td>8–12</td><td>97,5</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>3 889 ₸</td></tr>
+              <tr><td>133</td><td>4,0</td><td>8–12</td><td>78,6</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>4 825 ₸</td></tr>
+              <tr><td>159</td><td>4,0</td><td>11–12</td><td>65,4</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>5 795 ₸</td></tr>
+              <tr><td>159</td><td>5,0</td><td>11–12</td><td>51,9</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>7 300 ₸</td></tr>
+              <tr><td>219</td><td>5,0</td><td>11–11,7</td><td>37,9</td><td class="price-val">397 000</td><td class="price-val">399 000</td><td>10 530 ₸</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="p-bessh" class="tab-panel">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Ду (мм)</th><th>Толщина</th><th>Длина</th><th>М в 1 тн</th><th>Цена 1 тн (до 5 тн)</th><th>Цена 1 м</th></tr></thead>
+            <tbody>
+              <tr><td>57</td><td>3,5</td><td>5–7,9</td><td>191,3</td><td class="price-val">850 000</td><td>3 980 ₸</td></tr>
+              <tr><td>76</td><td>4,0</td><td>5–7,9</td><td>140,6</td><td class="price-val">850 000</td><td>6 072 ₸</td></tr>
+              <tr><td>89</td><td>4,0</td><td>5–7,9</td><td>118,2</td><td class="price-val">850 000</td><td>7 225 ₸</td></tr>
+              <tr><td>89</td><td>6,0</td><td>5–7,9</td><td>79,8</td><td class="price-val">850 000</td><td>10 701 ₸</td></tr>
+              <tr><td>108</td><td>4,0</td><td>5–7,9</td><td>97,1</td><td class="price-val">850 000</td><td>8 796 ₸</td></tr>
+              <tr><td>133</td><td>5,0</td><td>5–7,9</td><td>63,4</td><td class="price-val">850 000</td><td>13 468 ₸</td></tr>
+              <tr><td>159</td><td>5,0</td><td>5–7,9</td><td>51,6</td><td class="price-val">850 000</td><td>16 542 ₸</td></tr>
+              <tr><td>219</td><td>6,0</td><td>5–7,9</td><td>31,7</td><td class="price-val">850 000</td><td>26 918 ₸</td></tr>
+              <tr><td>273</td><td>8,0</td><td>5–7,9</td><td>18,9</td><td class="price-val">850 000</td><td>45 262 ₸</td></tr>
+              <tr><td>325</td><td>10,0</td><td>5–7,9</td><td>12,9</td><td class="price-val">850 000</td><td>66 356 ₸</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="p-profil" class="tab-panel">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Профиль</th><th>Толщина</th><th>М в 1 тн</th><th>Цена 1 тн (5–20 тн)</th><th>Цена 1 тн (до 5 тн)</th><th>Цена 1 м</th></tr></thead>
+            <tbody>
+              <tr><td>40×40</td><td>3,0</td><td>297,6</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>1 273 ₸</td></tr>
+              <tr><td>50×50</td><td>3,0</td><td>232,0</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>1 633 ₸</td></tr>
+              <tr><td>60×60</td><td>3,0</td><td>190,5</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>1 990 ₸</td></tr>
+              <tr><td>80×40</td><td>3,0</td><td>190,5</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>1 990 ₸</td></tr>
+              <tr><td>100×100</td><td>3,0</td><td>111,0</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>3 419 ₸</td></tr>
+              <tr><td>120×80</td><td>3,0</td><td>111,0</td><td class="price-val">377 000</td><td class="price-val">379 000</td><td>3 414 ₸</td></tr>
+              <tr><td>120×120</td><td>4,0</td><td>69,7</td><td class="price-val">427 000</td><td class="price-val">429 000</td><td>6 156 ₸</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FITTINGS SECTION ===== -->
+<section id="fittings" class="products-section" aria-labelledby="fittings-title">
+  <div class="container">
+    <div class="products-section-header fade-in">
+      <div class="section-label">Каталог · Трубопроводная арматура</div>
+      <h2 class="section-title" id="fittings-title">Фитинги и задвижки</h2>
+      <div class="divider"></div>
+      <p style="color:var(--muted);font-size:0.9rem;margin-top:12px;max-width:600px;">Производство Россия, Китай. Цены указаны в тенге с НДС за единицу.</p>
+    </div>
+    <div class="tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="switchTab(this,'f-zadv')">Задвижки</button>
+        <button class="tab-btn" onclick="switchTab(this,'f-krani')">Краны шаровые</button>
+        <button class="tab-btn" onclick="switchTab(this,'f-flanci')">Фланцы</button>
+        <button class="tab-btn" onclick="switchTab(this,'f-klap')">Клапаны / Вентили</button>
+      </div>
+      <div id="f-zadv" class="tab-panel active">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Наименование</th><th>Ду (мм)</th><th>Масса (кг)</th><th>Длина (мм)</th><th>Цена с НДС (тг)</th></tr></thead>
+            <tbody>
+              <tr><td colspan="5" style="background:#f7f9fb;font-family:var(--font-display);font-size:0.75rem;letter-spacing:1px;color:var(--muted);text-transform:uppercase;padding:10px 16px;">Задвижки стальные 30с41нж (Ру-16) Россия ООО «Муромский завод»</td></tr>
+              <tr><td>Задвижка стальная 30с41нж (Ру-16)</td><td>50</td><td>17</td><td>180</td><td class="price-val">56 360 ₸</td></tr>
+              <tr><td>Задвижка стальная 30с41нж (Ру-16)</td><td>80</td><td>29</td><td>210</td><td class="price-val">82 500 ₸</td></tr>
+              <tr><td>Задвижка стальная 30с41нж (Ру-16)</td><td>100</td><td>39</td><td>230</td><td class="price-val">123 410 ₸</td></tr>
+              <tr><td>Задвижка стальная 30с41нж (Ру-16)</td><td>150</td><td>83</td><td>280</td><td class="price-val">253 320 ₸</td></tr>
+              <tr><td>Задвижка стальная 30с41нж (Ру-16)</td><td>200</td><td>124</td><td>330</td><td class="price-val">390 440 ₸</td></tr>
+              <tr><td colspan="5" style="background:#f7f9fb;font-family:var(--font-display);font-size:0.75rem;letter-spacing:1px;color:var(--muted);text-transform:uppercase;padding:10px 16px;">Задвижки стальные XY Z41H-16C (Ру-16) Китай ГОСТ России</td></tr>
+              <tr><td>Задвижка стальная XY Z41H-16C (Ру-16)</td><td>50</td><td>14,6</td><td>180</td><td class="price-val">50 710 ₸</td></tr>
+              <tr><td>Задвижка стальная XY Z41H-16C (Ру-16)</td><td>80</td><td>24</td><td>210</td><td class="price-val">80 420 ₸</td></tr>
+              <tr><td>Задвижка стальная XY Z41H-16C (Ру-16)</td><td>100</td><td>33,9</td><td>230</td><td class="price-val">106 420 ₸</td></tr>
+              <tr><td>Задвижка стальная XY Z41H-16C (Ру-16)</td><td>150</td><td>67,03</td><td>280</td><td class="price-val">213 650 ₸</td></tr>
+              <tr><td>Задвижка стальная XY Z41H-16C (Ру-16)</td><td>200</td><td>107,8</td><td>330</td><td class="price-val">319 720 ₸</td></tr>
+              <tr><td>Задвижка стальная XY Z41H-16C (Ру-16)</td><td>300</td><td>195</td><td>500</td><td class="price-val">689 700 ₸</td></tr>
+              <tr><td colspan="5" style="background:#f7f9fb;font-family:var(--font-display);font-size:0.75rem;letter-spacing:1px;color:var(--muted);text-transform:uppercase;padding:10px 16px;">Задвижки чугунные 30ч6бр (Ру-16) Россия ОАО «Литейно-механический завод»</td></tr>
+              <tr><td>Задвижка чугунная 30ч6бр (Ру-16)</td><td>50</td><td>11,5</td><td>180</td><td class="price-val">20 920 ₸</td></tr>
+              <tr><td>Задвижка чугунная 30ч6бр (Ру-16)</td><td>80</td><td>19</td><td>210</td><td class="price-val">33 790 ₸</td></tr>
+              <tr><td>Задвижка чугунная 30ч6бр (Ру-16)</td><td>100</td><td>30,5</td><td>230</td><td class="price-val">48 320 ₸</td></tr>
+              <tr><td>Задвижка чугунная 30ч6бр (Ру-16)</td><td>150</td><td>58</td><td>280</td><td class="price-val">116 290 ₸</td></tr>
+              <tr><td>Задвижка чугунная 30ч6бр (Ру-16)</td><td>200</td><td>99</td><td>330</td><td class="price-val">231 240 ₸</td></tr>
+              <tr><td>Задвижка чугунная 30ч6бр (Ру-16)</td><td>300</td><td>247</td><td>500</td><td class="price-val">495 580 ₸</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="f-krani" class="tab-panel">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Наименование</th><th>Ду (мм)</th><th>Масса (кг)</th><th>Длина (мм)</th><th>Цена с НДС (тг)</th></tr></thead>
+            <tbody>
+              <tr><td colspan="5" style="background:#f7f9fb;font-family:var(--font-display);font-size:0.75rem;letter-spacing:1px;color:var(--muted);text-transform:uppercase;padding:10px 16px;">Краны шаровые фланцевые стальные LD, КШЦФ (Ру-16/25/40) Россия</td></tr>
+              <tr><td>Кран шаровой фланцевый LD КШЦФ (Ру-16/25/40)</td><td>15</td><td>0,7</td><td>120</td><td class="price-val">8 900 ₸</td></tr>
+              <tr><td>Кран шаровой фланцевый LD КШЦФ (Ру-16/25/40)</td><td>20</td><td>0,8</td><td>120</td><td class="price-val">10 230 ₸</td></tr>
+              <tr><td>Кран шаровой фланцевый LD КШЦФ (Ру-16/25/40)</td><td>25</td><td>1,1</td><td>140</td><td class="price-val">12 450 ₸</td></tr>
+              <tr><td>Кран шаровой фланцевый LD КШЦФ (Ру-16/25/40)</td><td>32</td><td>1,3</td><td>140</td><td class="price-val">13 550 ₸</td></tr>
+              <tr><td>Кран шаровой фланцевый LD КШЦФ (Ру-16/25/40)</td><td>50</td><td>2</td><td>165</td><td class="price-val">16 660 ₸</td></tr>
+              <tr><td>Кран шаровой фланцевый LD КШЦФ (Ру-16/25/40)</td><td>80/16</td><td>—</td><td>—</td><td class="price-val">31 010 ₸</td></tr>
+              <tr><td>Кран шаровой фланцевый LD КШЦФ (Ру-16/25/40)</td><td>100/16</td><td>—</td><td>—</td><td class="price-val">36 480 ₸</td></tr>
+              <tr><td colspan="5" style="background:#f7f9fb;font-family:var(--font-display);font-size:0.75rem;letter-spacing:1px;color:var(--muted);text-transform:uppercase;padding:10px 16px;">Краны шаровые муфтовые стальные LD КШЦМ (Ру-40) Россия</td></tr>
+              <tr><td>Кран шаровой муфтовый LD КШЦМ (Ру-40)</td><td>15</td><td>0,8</td><td>135</td><td class="price-val">7 190 ₸</td></tr>
+              <tr><td>Кран шаровой муфтовый LD КШЦМ (Ру-40)</td><td>20</td><td>0,8</td><td>135</td><td class="price-val">7 570 ₸</td></tr>
+              <tr><td>Кран шаровой муфтовый LD КШЦМ (Ру-40)</td><td>25</td><td>1,2</td><td>135</td><td class="price-val">8 280 ₸</td></tr>
+              <tr><td>Кран шаровой муфтовый LD КШЦМ (Ру-40)</td><td>40</td><td>1,9</td><td>155</td><td class="price-val">11 050 ₸</td></tr>
+              <tr><td>Кран шаровой муфтовый LD КШЦМ (Ру-40)</td><td>50</td><td>2,9</td><td>170</td><td class="price-val">12 890 ₸</td></tr>
+              <tr><td colspan="5" style="background:#f7f9fb;font-family:var(--font-display);font-size:0.75rem;letter-spacing:1px;color:var(--muted);text-transform:uppercase;padding:10px 16px;">Краны шаровые FAF (Турция) — задвижка с обрезиненным клином Ру-16</td></tr>
+              <tr><td>Задвижка чугунная FAF с обрезиненным клином Ру-16</td><td>50</td><td>8,6</td><td>—</td><td class="price-val">36 810 ₸</td></tr>
+              <tr><td>Задвижка чугунная FAF с обрезиненным клином Ру-16</td><td>65</td><td>11,5</td><td>—</td><td class="price-val">47 800 ₸</td></tr>
+              <tr><td>Задвижка чугунная FAF с обрезиненным клином Ру-16</td><td>80</td><td>13,5</td><td>—</td><td class="price-val">55 450 ₸</td></tr>
+              <tr><td>Задвижка чугунная FAF с обрезиненным клином Ру-16</td><td>100</td><td>18,5</td><td>—</td><td class="price-val">70 270 ₸</td></tr>
+              <tr><td>Задвижка чугунная FAF с обрезиненным клином Ру-16</td><td>150</td><td>30,5</td><td>—</td><td class="price-val">112 815 ₸</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="f-flanci" class="tab-panel">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Наименование</th><th>Ду (мм)</th><th>Масса (кг)</th><th>Длина (мм)</th><th>Цена с НДС (тг)</th></tr></thead>
+            <tbody>
+              <tr><td colspan="5" style="background:#f7f9fb;font-family:var(--font-display);font-size:0.75rem;letter-spacing:1px;color:var(--muted);text-transform:uppercase;padding:10px 16px;">Фланцы ответные приварные стальные ГОСТ 12820-80 (Ру-16)</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>15</td><td>0,9</td><td>—</td><td class="price-val">770 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>20</td><td>0,7</td><td>—</td><td class="price-val">820 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>25</td><td>0,8</td><td>—</td><td class="price-val">940 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>32</td><td>1,3</td><td>—</td><td class="price-val">1 360 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>50</td><td>1,8</td><td>—</td><td class="price-val">1 920 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>80</td><td>2,6</td><td>—</td><td class="price-val">3 010 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>100</td><td>3,5</td><td>—</td><td class="price-val">3 900 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>150</td><td>6,7</td><td>—</td><td class="price-val">6 380 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>200</td><td>9,9</td><td>—</td><td class="price-val">9 670 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>250</td><td>14</td><td>—</td><td class="price-val">15 040 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>300</td><td>17,6</td><td>—</td><td class="price-val">18 420 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>400</td><td>31,3</td><td>—</td><td class="price-val">32 400 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>500</td><td>55</td><td>—</td><td class="price-val">59 830 ₸</td></tr>
+              <tr><td>Фланец приварной ст. ГОСТ 12820-80 (Ру-16)</td><td>600</td><td>75</td><td>—</td><td class="price-val">86 600 ₸</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="f-klap" class="tab-panel">
+        <div class="product-table-wrapper">
+          <table class="product-table">
+            <thead><tr><th>Наименование</th><th>Ду (мм)</th><th>Масса (кг)</th><th>Длина (мм)</th><th>Цена с НДС (тг)</th></tr></thead>
+            <tbody>
+              <tr><td colspan="5" style="background:#f7f9fb;font-family:var(--font-display);font-size:0.75rem;letter-spacing:1px;color:var(--muted);text-transform:uppercase;padding:10px 16px;">Затворы стальные фланцевые D343H-16C (Ру-16) Китай</td></tr>
+              <tr><td>Затвор стальной D343H-16C (Ру-16)</td><td>50</td><td>17</td><td>108</td><td class="price-val">47 190 ₸</td></tr>
+              <tr><td>Затвор стальной D343H-16C (Ру-16)</td><td>65</td><td>20</td><td>112</td><td class="price-val">53 220 ₸</td></tr>
+              <tr><td>Затвор стальной D343H-16C (Ру-16)</td><td>80</td><td>23</td><td>114</td><td class="price-val">58 560 ₸</td></tr>
+              <tr><td>Затвор стальной D343H-16C (Ру-16)</td><td>100</td><td>31</td><td>127</td><td class="price-val">72 310 ₸</td></tr>
+              <tr><td>Затвор стальной D343H-16C (Ру-16)</td><td>150</td><td>46</td><td>140</td><td class="price-val">122 470 ₸</td></tr>
+              <tr><td>Затвор стальной D343H-16C (Ру-16)</td><td>200</td><td>78,6</td><td>152</td><td class="price-val">174 800 ₸</td></tr>
+              <tr><td colspan="5" style="background:#f7f9fb;font-family:var(--font-display);font-size:0.75rem;letter-spacing:1px;color:var(--muted);text-transform:uppercase;padding:10px 16px;">Вентили запорные фланцевые J41H-25 LY (Ру-25) Китай</td></tr>
+              <tr><td>Вентиль запорный J41H-25 LY (Ру-25)</td><td>15</td><td>4,6</td><td>130</td><td class="price-val">14 320 ₸</td></tr>
+              <tr><td>Вентиль запорный J41H-25 LY (Ру-25)</td><td>20</td><td>5,6</td><td>150</td><td class="price-val">16 050 ₸</td></tr>
+              <tr><td>Вентиль запорный J41H-25 LY (Ру-25)</td><td>25</td><td>6,9</td><td>160</td><td class="price-val">22 430 ₸</td></tr>
+              <tr><td>Вентиль запорный J41H-25 LY (Ру-25)</td><td>40</td><td>15,1</td><td>200</td><td class="price-val">36 670 ₸</td></tr>
+              <tr><td>Вентиль запорный J41H-25 LY (Ру-25)</td><td>50</td><td>18,4</td><td>230</td><td class="price-val">44 710 ₸</td></tr>
+              <tr><td>Вентиль запорный J41H-25 LY (Ру-25)</td><td>80</td><td>34</td><td>310</td><td class="price-val">76 600 ₸</td></tr>
+              <tr><td>Вентиль запорный J41H-25 LY (Ру-25)</td><td>100</td><td>54,7</td><td>350</td><td class="price-val">115 760 ₸</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <button class="btn btn-primary" onclick="openModal()">Запросить полный прайс-лист</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="services-header fade-in">
+      <div class="section-label" style="color:var(--gold)">Что мы предлагаем</div>
+      <h2 class="section-title" id="services-title" style="color:var(--white)">Наши услуги</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="services-grid">
+      <article class="service-card fade-in" data-num="01">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/></svg>
+        </div>
+        <div class="service-title">Доставка по Казахстану</div>
+        <p class="service-text">Организуем доставку по Алматы и в любую точку Казахстана. Работаем с транспортными компаниями и собственным автопарком.</p>
+      </article>
+      <article class="service-card fade-in" data-num="02">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 7h-9v2h9v2h-9v2h9v2h-9v2h9c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-14 8H4V5h2V3H4C2.9 3 2 3.9 2 5v10c0 1.1.9 2 2 2h2v-2z"/></svg>
+        </div>
+        <div class="service-title">Формирование ж/д вагонов</div>
+        <p class="service-text">Формируем сборные железнодорожные вагоны из комбинированных заявок нескольких клиентов — экономия на логистике до 40%.</p>
+      </article>
+      <article class="service-card fade-in" data-num="03">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="service-title">Погрузка и отгрузка</div>
+        <p class="service-text">Погрузка осуществляется только в открытые машины. Пн–Пт с 08:30 до 17:30, обед 12:30–13:30. Быстрое оформление документов.</p>
+      </article>
+      <article class="service-card fade-in" data-num="04">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+        </div>
+        <div class="service-title">Консультации и подбор</div>
+        <p class="service-text">Наши менеджеры помогут подобрать нужные материалы по ГОСТ, ТУ, размерам и марке стали. Ответим на запрос в течение 24 часов.</p>
+      </article>
+      <article class="service-card fade-in" data-num="05">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg>
+        </div>
+        <div class="service-title">Актуальные прайс-листы</div>
+        <p class="service-text">Прайс-листы обновляются регулярно с учётом рыночной стоимости. Гибкая скидочная система: от 5 тонн и от 20 тонн.</p>
+      </article>
+      <article class="service-card fade-in" data-num="06">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <div class="service-title">Гарантия качества</div>
+        <p class="service-text">Поставляем продукцию от проверенных производителей с сертификатами качества. Сопроводительная документация на каждую партию.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWS ===== -->
+<section id="news" aria-labelledby="news-title">
+  <div class="container">
+    <div class="news-header fade-in">
+      <div>
+        <div class="section-label">Актуальное</div>
+        <h2 class="section-title" id="news-title">Новости и акции</h2>
+        <div class="divider mb-0"></div>
+      </div>
+      <a href="#" class="btn btn-primary">Все новости</a>
+    </div>
+    <div class="news-grid fade-in">
+      <article class="news-card">
+        <div class="news-card-img" style="background-image:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80');background-size:cover;background-position:center;">
+          <span class="news-card-label label-promo">Акция</span>
+        </div>
+        <div class="news-card-body">
+          <div class="news-date">Апрель 2025</div>
+          <h3 class="news-title">Скидка 5% на арматуру при заказе от 5 тонн — новый прайс-лист от 21.04.2025</h3>
+          <p class="news-excerpt">Обновили прайс-лист на металлопрокат. Специальные условия для оптовых заказчиков от 5 и от 20 тонн. Арматура АIII А-400/А-500, катанка, листы, уголок.</p>
+          <a href="#" class="news-more">Читать далее</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="news-card-img" style="background-image:url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&q=80');background-size:cover;background-position:center;">
+          <span class="news-card-label label-news">Услуга</span>
+        </div>
+        <div class="news-card-body">
+          <div class="news-date">Март 2025</div>
+          <h3 class="news-title">Формирование сборных ж/д вагонов — экономия на логистике</h3>
+          <p class="news-excerpt">Принимаем заявки на включение в сборный вагон. Оптимальное решение для небольших и средних партий металлопроката.</p>
+          <a href="#" class="news-more">Читать далее</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="news-card-img" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80');background-size:cover;background-position:center;">
+          <span class="news-card-label label-news">Новинка</span>
+        </div>
+        <div class="news-card-body">
+          <div class="news-date">Февраль 2025</div>
+          <h3 class="news-title">Расширен ассортимент арматуры FAF (Турция) и LD (Россия)</h3>
+          <p class="news-excerpt">В наличии задвижки FAF с обрезиненным клином Ру-16, затворы-бабочки EPDM, фильтры сетчатые и фланцевые клапаны.</p>
+          <a href="#" class="news-more">Читать далее</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICE LISTS ===== -->
+<section id="price-lists" aria-labelledby="price-title">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:56px">
+      <div class="section-label">Скачайте прайсы</div>
+      <h2 class="section-title" id="price-title">Прайс-листы</h2>
+      <div class="divider center"></div>
+      <p class="section-desc">Все актуальные прайс-листы на нашу продукцию. Загружайте и сравнивайте цены по категориям товаров.</p>
+    </div>
+    <div class="price-lists-grid fade-in">
+      <div class="price-card">
+        <div class="price-card-icon">📊</div>
+        <div class="price-card-title">Сэндвич-панели</div>
+        <p class="price-card-text">Полный прайс-лист на сэндвич-панели с размерами и техническими характеристиками</p>
+        <button class="btn btn-primary btn-small" onclick="downloadPriceList('sandvich')">Скачать PDF</button>
+      </div>
+      <div class="price-card">
+        <div class="price-card-icon">⚙️</div>
+        <div class="price-card-title">Металлопрокат</div>
+        <p class="price-card-text">Актуальные цены на листы, уголки, швеллеры, балки от 21.04.2025</p>
+        <button class="btn btn-primary btn-small" onclick="downloadPriceList('metal')">Скачать PDF</button>
+      </div>
+      <div class="price-card">
+        <div class="price-card-icon">🔧</div>
+        <div class="price-card-title">Трубы стальные</div>
+        <p class="price-card-text">Прайс на стальные трубы всех типов и сечений от 11.01.2024</p>
+        <button class="btn btn-primary btn-small" onclick="downloadPriceList('pipes')">Скачать PDF</button>
+      </div>
+      <div class="price-card">
+        <div class="price-card-icon">🛠️</div>
+        <div class="price-card-title">Фитинги и задвижки</div>
+        <p class="price-card-text">Полный каталог фитингов, кранов и задвижек с характеристиками</p>
+        <button class="btn btn-primary btn-small" onclick="downloadPriceList('fittings')">Скачать PDF</button>
+      </div>
+    </div>
+    <div class="price-info fade-in" style="margin-top:60px;padding:24px;background:rgba(26,86,219,0.08);border-radius:4px;border-left:4px solid var(--rust);text-align:center">
+      <p style="margin:0;color:var(--text-body);font-size:0.95rem">📌 Прайс-листы обновляются еженедельно. Для получения индивидуального предложения</p>
+      <a href="#contacts" class="btn btn-primary" style="margin-top:16px">Свяжитесь с нами</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTS ===== -->
+<section id="contacts" aria-labelledby="contacts-title">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:56px">
+      <div class="section-label">Свяжитесь с нами</div>
+      <h2 class="section-title" id="contacts-title">Контакты</h2>
+      <div class="divider center"></div>
+    </div>
+    <div class="contacts-grid">
+      <div class="contacts-info fade-in">
+        <div class="contact-block">
+          <div class="contact-block-title">Адрес офиса и склада</div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+            <div class="contact-text">Республика Казахстан, Алматинская обл.,<br>г. Каскелен, ул. Жазира 5/3, офис 35</div>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-title">Телефон и Email</div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+            <div class="contact-text"><a href="tel:+77075545148">+7 (707) 554-51-48</a> — менеджер Куаныш</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+            <div class="contact-text"><a href="mailto:Magnitogorsk.Metall.Import@mail.ru">Magnitogorsk.Metall.Import@mail.ru</a></div>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-title">Режим работы</div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
+            <div class="contact-text">Понедельник – Пятница: 08:30 – 17:30<br>Обед: 12:30 – 13:30<br>Суббота, Воскресенье: выходной</div>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-title">Банковские реквизиты</div>
+          <div style="background:var(--smoke);padding:20px;border-radius:var(--radius);font-size:0.82rem;line-height:1.9;">
+            <div><strong style="color:var(--muted);font-size:0.68rem;letter-spacing:1px;text-transform:uppercase">БИН:</strong> <span style="font-family:monospace">181040033886</span></div>
+            <div><strong style="color:var(--muted);font-size:0.68rem;letter-spacing:1px;text-transform:uppercase">ИИК:</strong> <span style="font-family:monospace">KZ65722S000001656887</span></div>
+            <div><strong style="color:var(--muted);font-size:0.68rem;letter-spacing:1px;text-transform:uppercase">БИК:</strong> <span style="font-family:monospace">CASPKZKA</span></div>
+            <div><strong style="color:var(--muted);font-size:0.68rem;letter-spacing:1px;text-transform:uppercase">КБЕ:</strong> <span style="font-family:monospace">17</span></div>
+            <div><strong style="color:var(--muted);font-size:0.68rem;letter-spacing:1px;text-transform:uppercase">Банк:</strong> Филиал АО «Kaspi Bank» в г. Алматы</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap fade-in">
+        <div class="contact-form-title">Обратная связь</div>
+        <p class="contact-form-sub">Оставьте заявку и мы перезвоним вам в течение рабочего часа.</p>
+        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="fname">Ваше имя *</label>
+              <input class="form-input" type="text" id="fname" name="name" placeholder="Иван Петров" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fphone">Телефон *</label>
+              <input class="form-input" type="tel" id="fphone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="femail">Email</label>
+            <input class="form-input" type="email" id="femail" name="email" placeholder="example@mail.ru">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fcat">Интересующая продукция</label>
+            <select class="form-select" id="fcat" name="category">
+              <option value="">Выберите категорию</option>
+              <option>Сэндвич-панели</option>
+              <option>Металлопрокат (арматура, листы, уголок)</option>
+              <option>Трубы стальные</option>
+              <option>Фитинги и задвижки</option>
+              <option>Другое</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fmsg">Сообщение / Комментарий</label>
+            <textarea class="form-textarea" id="fmsg" name="message" placeholder="Опишите ваш запрос, объём, сроки..."></textarea>
+          </div>
+          <p class="form-privacy">Нажимая кнопку «Отправить», вы соглашаетесь на обработку персональных данных в соответствии с законодательством Республики Казахстан.</p>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="map-placeholder fade-in">
+      <div class="map-pin"></div>
+      <div class="map-text">г. Каскелен, ул. Жазира 5/3</div>
+      <a href="https://www.google.com/maps/@43.6628,68.7738,15z" target="_blank" rel="noopener" class="map-link">
+        Открыть в Google Maps →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">
+          <div class="logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24"><path d="M2 4h20v2H2zm0 14h20v2H2zM4 8h16v2H4zm0 6h16v2H4zm2-3h12v2H6z"/></svg>
+            </div>
+            <div class="logo-text">
+              <div class="logo-name">Магнитогорск<br>Металл Импорт</div>
+              <div class="logo-sub">ТОО · с 2018 года</div>
+            </div>
+          </div>
+        </div>
+        <p class="footer-desc">Поставки металлопроката, труб, фитингов и строительных материалов в Казахстане. Прямые поставки, широкий ассортимент, конкурентные цены.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="WhatsApp">W</a>
+          <a href="#" class="social-btn" aria-label="Telegram">T</a>
+          <a href="#" class="social-btn" aria-label="Instagram">I</a>
+          <a href="#" class="social-btn" aria-label="2GIS">2G</a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Каталог">
+        <div class="footer-col-title">Каталог</div>
+        <ul class="footer-links">
+          <li><a href="#sandvich">Сэндвич-панели</a></li>
+          <li><a href="#metal">Металлопрокат</a></li>
+          <li><a href="#pipes">Трубы стальные</a></li>
+          <li><a href="#fittings">Фитинги и задвижки</a></li>
+          <li><a href="#fittings">Краны шаровые</a></li>
+          <li><a href="#fittings">Фланцы</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Компания">
+        <div class="footer-col-title">Компания</div>
+        <ul class="footer-links">
+          <li><a href="#advantages">О компании</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#price-lists">Прайс-листы</a></li>
+          <li><a href="#news">Новости и акции</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="#" onclick="openModal()">Заказать звонок</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-legal">
+        <div class="footer-col-title">Реквизиты</div>
+        <div class="footer-legal-item"><div class="footer-legal-key">ТОО</div><div class="footer-legal-val">«Магнитогорск Металл Импорт»</div></div>
+        <div class="footer-legal-item"><div class="footer-legal-key">БИН</div><div class="footer-legal-val">181040033886</div></div>
+        <div class="footer-legal-item"><div class="footer-legal-key">ИИК</div><div class="footer-legal-val">KZ65722S000001656887</div></div>
+        <div class="footer-legal-item"><div class="footer-legal-key">БИК</div><div class="footer-legal-val">CASPKZKA</div></div>
+        <div class="footer-legal-item"><div class="footer-legal-key">КБЕ</div><div class="footer-legal-val">17</div></div>
+        <div class="footer-legal-item"><div class="footer-legal-key">Банк</div><div class="footer-legal-val">АО «Kaspi Bank», Алматы</div></div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2018–2025 ТОО «Магнитогорск Металл Импорт». Все права защищены.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Публичная оферта</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" onclick="closeModal()" aria-label="Закрыть">×</button>
+    <div class="modal-title" id="modal-title">Заказать звонок</div>
+    <p class="modal-sub">Оставьте номер — перезвоним в течение 30 минут в рабочее время.</p>
+    <form onsubmit="handleCallbackSubmit(event)">
+      <div class="form-group">
+        <label class="form-label" for="mname">Ваше имя *</label>
+        <input class="form-input" type="text" id="mname" placeholder="Имя" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="mphone">Телефон *</label>
+        <input class="form-input" type="tel" id="mphone" placeholder="+7 (___) ___-__-__" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="mtime">Удобное время звонка</label>
+        <select class="form-select" id="mtime">
+          <option>В любое время</option>
+          <option>08:30 – 10:00</option>
+          <option>10:00 – 12:30</option>
+          <option>13:30 – 15:00</option>
+          <option>15:00 – 17:30</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px">Перезвоните мне</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== SEARCH MODAL ===== -->
+<div class="search-modal" id="searchModal">
+  <div class="search-modal-content">
+    <button class="search-modal-close" onclick="closeSearchModal()" aria-label="Закрыть поиск">×</button>
+    <div class="search-modal-header">
+      <div class="search-input-wrapper">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" class="search-icon">
+          <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+        </svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Поиск по каталогу (сэндвич-панеls, фитинги...)" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <div id="searchNoResults" style="display:none;text-align:center;padding:32px 0;color:var(--muted);font-family:var(--font-display);letter-spacing:1px;">
+      Ничего не найдено. Попробуйте другой запрос.
+    </div>
+  </div>
+</div>
+
+<!-- FLOATING MOBILE CALL BUTTON -->
+<button class="fab-call" onclick="openModal()" aria-label="Заказать звонок">
+  <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  Звонок
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
