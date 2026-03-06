@@ -1,0 +1,2 @@
+# magnitogorsk
+almatymagnitogorsk-site
